@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button {
+  background-color: green;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.heading {
+  display: flex;
+}
+
+.heading-h5 {
+  font-weight: bold;
+  font-size: x-large;
+}
+.card {
+  width: 90%;
+  max-width: 40rem;
+  margin: 15rem auto;
+  padding: 2rem;
+}
+
+.control {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.control label,
+.control input {
+  display: block;
+}
+
+.control label {
+  font-weight: bold;
+  flex: 1;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.add-employee {
+  text-align: right;
+  flex: 1;
+  margin-bottom: 10px;
+}
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+
+.actions {
+  text-align: center;
+}
+.editButton {
+  background-color: green !important;
+}
+.editButton:hover {
+  background-color: rgb(41, 223, 208) !important;
+}
+
+.cancelButton {
+  background-color: red !important;
+}
+.cancelButton:hover {
+  background-color: rgb(245, 125, 13) !important;
+}
+
+button:hover,
+button:active {
+  background-color: #33059e;
+  border-color: #33059e;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  /* background-color: #ccc; */
+  /* color: #292929; */
+  border-color: #ccc !important;
+  cursor: not-allowed !important;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.form-actions button {
+  margin-left: 1rem;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #b40e0e;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+.employee-div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(243, 244, 246, 1);
+  margin-bottom: 2.5rem;
+}
+
+.employee-buttons {
+  flex: 1 1 auto;
+  text-align: right !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  margin: 0.5rem !important;
+}
+.employee-heading {
+  flex: 1 1 auto;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.employee-nodata {
+  color: rgba(107, 114, 128, 1);
+  background-color: rgba(243, 244, 246, 1);
+  text-align: center !important;
+  padding-bottom: 3rem!important;
+  padding-top: 3rem!important;
+}
+.home-div {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .control {
+    align-items: center;
+    flex-direction: row;
+  }
+}
